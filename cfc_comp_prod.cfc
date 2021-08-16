@@ -22,7 +22,7 @@
     <!--- Função para retornar todos os estados existentes no banco de dados --->
     <cffunction  name="retornarEstados" returntype = "Query">
         <cfquery datasource = "estudo" name = "qEstados">
-            SELECT nome 
+            SELECT id,nome 
             FROM estados
         </cfquery>
         <cfreturn qEstados>
